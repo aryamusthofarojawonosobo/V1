@@ -312,10 +312,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
               {
       
                 "rows": [{
-                  "title": `|💌|⟩»➵͜͡✪ ALL MENU`,
+                  "title": `|💬|⟩»➵͜͡✪ ALL MENU`,
                   "description": "Menampilkan Semua Fitur Yang Ada",
                   "rowId": '.? all'
-                  }, {
+                }, {
                   "title": "|🗃️|⟩»➵͜͡✪ ABSEN & VOTING MENU",
                   "description": "Menampilan fitur absen dan voting",
                   "rowId": `${_p}? absen`
@@ -324,7 +324,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu khusus para wibu",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "|🎫|⟩»➵͜͡✪ STICKER & CONVERT MENU",
+                  "title": "|🎨|⟩»➵͜͡✪ STICKER & CONVERT MENU",
                   "description": "Membuat stiker & convert ",
                   "rowId": `${_p}? sticker`
                 }, {
@@ -332,11 +332,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Download sesuatu menggunakan BOT",
                   "rowId": `${_p}? downloader`
                 }, {
-                  "title": "|📊|⟩»➵͜͡✪ EXP & LIMIT MENU",
+                  "title": "|✨|⟩»➵͜͡✪ EXP & LIMIT MENU",
                   "description": "Cek XP Dan Level serta lihat progresmu",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "|🌬️|⟩»➵͜͡✪ FUN MENU",
+                  "title": "|🧩|⟩»➵͜͡✪ FUN MENU",
                   "description": "Menu untuk bersenang-senang",
                   "rowId": `${_p}? fun`
                 }, {
@@ -380,15 +380,15 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Ubah Audio dengan Filter",
                   "rowId": `${_p}? suara`
                 }, {
-                  "title": "|👩‍💻|⟩»➵͜͡✪ PREMIUM MENU",
+                  "title": "|🌟💻|⟩»➵͜͡✪ PREMIUM MENU",
                   "description": "Menu Exclusive User Premium",
                   "rowId": `${_p}? premium`
                 }, {
-                  "title": "|🐻|⟩»➵͜͡✪ QUOTES MENU",
+                  "title": "|📑|⟩»➵͜͡✪ QUOTES MENU",
                   "description": "Tempatnya random inspirasi",
                   "rowId": `${_p}? quotes`
                 }, {
-                  "title": "|🧾|⟩»➵͜͡✪ RPG MENU",
+                  "title": "|🌱|⟩»➵͜͡✪ RPG MENU",
                   "description": "Menampilkan Menu Game Epic Rpg!",
                   "rowId": `${_p}? rpg`
                 }, {
@@ -400,7 +400,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Ubah link panjang mnejadi singkat",
                   "rowId": `${_p}? shortlink`
                 }, {
-                  "title": "|📍|⟩»➵͜͡✪ TOOLS MENU",
+                  "title": "|🛠️|⟩»➵͜͡✪ TOOLS MENU",
                   "description": "Mungkin tools ini bisa membantu?",
                   "rowId": `${_p}? tools`
                 }, {
@@ -408,7 +408,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Maker Text",
                   "rowId": `${_p}? text`
                 }, {
-                  "title": "|📨|⟩»➵͜͡✪ HENTAI MENU",
+                  "title": "|🔞|⟩»➵͜͡✪ HENTAI MENU",
                   "description": "Menampilkan Menu Hentai",
                   "rowId": `${_p}? nsfw`
                 }, {
