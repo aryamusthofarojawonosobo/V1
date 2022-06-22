@@ -190,7 +190,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
     let premium = global.db.data.users[m.sender].premium
     let user = global.db.data.users[who]
-    let registered = global.db.data.users[registered]
+    let platform = os.platform()
     let { exp, limit, level, money, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let tag = `wa.me/${m.sender.split('@')[0]}`
@@ -292,7 +292,6 @@ let menuu = `╭────ꕥ ${namebot} ꕥ────
 │💱 limit tersisa ${limit}
 │🏰 Level ${level} [Xp: ${exp}]
 │🔱 Pangkat ${role}
-│📚Terdaftar: ${registered ? 'Ya': 'Tidak'}
 ╰❑
 ╭─❑ 「 INFORMASI 」 ❑──
 │⏰ Aktif selama ${uptime}
@@ -596,16 +595,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Hallo"
   if (time >= 4) {
-    res = "Hallo👋"
+    res = "Selamat pagi 🌅"
   }
   if (time > 10) {
-    res = "Hallo👋"
+    res = "Selamat siang 🏞️"
   }
   if (time >= 15) {
-    res = "Hallo👋"
+    res = "Selamat sore 🌇"
   }
   if (time >= 18) {
-    res = "Hallo👋"
+    res = "Selamat malam 🌌"
   }
   return res
 }
