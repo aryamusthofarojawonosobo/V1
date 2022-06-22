@@ -594,7 +594,7 @@ module.exports = {
                         continue // Limit habis
                     }
                     if (plugin.level > _user.level) {
-                        this.reply(m.chat, `diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
+                        this.reply(m.chat, `Diperlukan level ${plugin.level} untuk menggunakan perintah ini. Level kamu ${_user.level}`, m)
                         continue // If the level has not been reached
                     }
                     let extra = {
@@ -708,15 +708,15 @@ module.exports = {
                             pp = await this.profilePictureUrl(user, 'image')
                         } catch (e) {
                         } finally {
-                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'Yah,si Beban Masuk Grup @user').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
-                                (chat.sBye || this.bye || conn.bye || 'Sip, Beban Berkurang @user!')).replace('@user', '@' + user.split('@')[0])
-                                this.sendButtonImg(id, pp, text, "©️ zifabotz-MD", "AWOKAWOAK👋", "nani", null)
+                            text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || '𝗛𝗮𝗹𝗼 𝗞𝗮𝗸 @user\n𝗦𝗲𝗹𝗮𝗺𝗮𝘁 𝗗𝗮𝘁𝗮𝗻𝗴 𝗗𝗶 𝗚𝗿𝗼𝘂𝗽 @subject\n\nIntro Dulu Yuk Biar Keren 🤙\n\n📛 Nama :\n🏙️ Askot :\n\nSemoga Kamu Senang Berada Disini\nSerta Jangan Lupa Untuk Membaca\nDan Mematuhi Rules Yang Ada\n  ${readMore}\n              *◌  ⃝✧⪼ Deskripsi Group ミ*\n  @desc').replace('@subject', groupMetadata.subject).replace('@desc', groupMetadata.desc.toString()) :
+                                (chat.sBye || this.bye || conn.bye || 'GoodBye @user ! 👋```\nSemoga kamu baik baik saja\n\nKalo Balik Jangan Lupa Bawa Gorengan Ya (>_<)')).replace('@user', '@' + user.split('@')[0])
+                                this.sendButtonImg(id, pp, text, "©️ AzBoTz-MD", "AWOKAWOAK👋", "nani", null)
                                 }
                     }
                 }
                 break
             case 'promote':
-                text = (chat.sPromote || this.spromote || conn.spromote || '@user ```is now Admin```')
+                text = (chat.sPromote || this.spromote || conn.spromote || '━━ 「 *Promote Detected* 」━━\nTerdeteksi @user menjadi *Admin*\nSemoga kamu jujur dan dapat dipercaya\nOleh semua member (+_+)')
             case 'demote':
                 if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
                 text = text.replace('@user', '@' + participants[0].split('@')[0])
@@ -765,6 +765,7 @@ ketik *.off delete* untuk mematikan pesan ini
     if (!db.data.chats[jid].descUpdate) return
     if (!desc) return
     let caption = `
+    ━━ 「 *NewDesk Detected* 」━━
     @${descOwner.split`@`[0]} telah mengubah deskripsi grup.
 
     ${desc}
@@ -810,8 +811,8 @@ global.dfail = (type, m, conn) => {
   unreg: `
 ┏━━━〔 ıll 𝐑𝐄𝐆𝐈𝐒𝐓𝐄𝐑 llı 〕━━❑
 ⬡ Hallo mypren👋, @${m.sender.split`@`[0]}
-⬡ Sebelum melihat fitur bot, lebih baik register dulu
-⬡ Kalau tidak kelihatan button nya, contohnya dibawah!
+⬡ Harap Verify dulu ya kak (+_+)
+⬡ Button tidak terlihat?, Pakai cara dibawah
 ┗━━━━━━━━━━━━━━━━━━❑
 ┏━━〔 ıll CONTOH llı 〕━❑
 ⬡ #daftar namamu.umurmu
