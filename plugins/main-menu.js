@@ -309,11 +309,11 @@ let menuu = `╭────ꕥ ${namebot} ꕥ────
 │📁 Database ${rtotalreg} dari ${totalreg}
 ╰❑
 ╭─❑ 「 INFORMASI 」 ❑──
-├lapor jika ada bug/error
+│⏰ Aktif selama ${uptime}
 │✾ Tanggal : ${date}
 │✾ Jam : ${wib}
 ╰❑
-⏰ Aktif selama ${uptime}
+
  `
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
@@ -328,7 +328,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
       
                 "rows": [{
                   "title": `|💌|⟩»➵͜͡✪ ALL MENU`,
-                  "description": "Menampilkan Menu All",
+                  "description": "Menampilkan Semua Fitur Yang Ada",
                   "rowId": '.? all'
                   }, {
                   "title": "|🗃️|⟩»➵͜͡✪ ABSEN MENU",
@@ -336,7 +336,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "|⛩️|⟩»➵͜͡✪ ANIME MENU",
-                  "description": "Menampilkan Menu Anime",
+                  "description": "Menampilkan Menu khusus para wibu",
                   "rowId": `${_p}? anime`
                 }, {
                   "title": "|🎫|⟩»➵͜͡✪ STICKER  MENU",
@@ -344,7 +344,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? sticker`
                 }, {
                   "title": "|📩|⟩»➵͜͡✪ DOWNLOAD MENU",
-                  "description": "Menampilkan Menu Downloader",
+                  "description": "Download sesuatu menggunakan BOT",
                   "rowId": `${_p}? downloader`
                 }, {
                   "title": "|📊|⟩»➵͜͡✪ EXP & LIMIT MENU",
@@ -356,7 +356,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? fun`
                 }, {
                   "title": "|🎮|⟩»➵͜͡✪ GAME MENU",
-                  "description": "Menampilkan Menu Game",
+                  "description": "Menampilkan Menu Game yang seru",
                   "rowId": `${_p}? game`
                 }, {
                   "title": "|💬|⟩»➵͜͡✪ GITHUB MENU",
@@ -364,7 +364,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? github`
                 }, {
                   "title": "|👥|⟩»➵͜͡✪ GROUP MENU",
-                  "description": "Menampilkan Menu Group",
+                  "description": "Menampilkan Menu khusus Group",
                   "rowId": `${_p}? group`
                 }, {
                   "title": "|🖼️|⟩»➵͜͡✪ IMAGE MENU",
@@ -372,7 +372,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? image`
                 }, {
                   "title": "|🌐|⟩»➵͜͡✪ INTERNET MENU",
-                  "description": "Menampilkan Menu Internet",
+                  "description": "Menampilkan Menu mencari sesuatu ",
                   "rowId": `${_p}? internet`
                 }, {
                   "title": "|🕌|⟩»➵͜͡✪ ISLAMIC MENU",
@@ -380,7 +380,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? islam`
                 }, {
                   "title": "|🐚|⟩»➵͜͡✪ KERANG MENU",
-                  "description": "Menampilkan Menu Kerang",
+                  "description": "Tanyakan sesuatu pada kerang ajaib",
                   "rowId": `${_p}? kerang`
                 }, {
                   "title": "|📝|⟩»➵͜͡✪ MAKER MENU",
@@ -392,19 +392,19 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? owner`
                 }, {
                   "title": "|🎙️|⟩»➵͜͡✪ CHANGE VOICE MENU",
-                  "description": "Menampilkan Menu Voice Changer",
+                  "description": "Ubah Audio dengan Filter",
                   "rowId": `${_p}? suara`
                 }, {
                   "title": "|👩‍💻|⟩»➵͜͡✪ PREMIUM MENU",
-                  "description": "Menampilkan Menu Premium",
+                  "description": "Menu Exclusive User Premium",
                   "rowId": `${_p}? premium`
                 }, {
                   "title": "|🐻|⟩»➵͜͡✪ QUOTES MENU",
-                  "description": "Menampilkan Menu Quotes",
+                  "description": "Tempatnya random inspirasi",
                   "rowId": `${_p}? quotes`
                 }, {
                   "title": "|🧾|⟩»➵͜͡✪ RPG MENU",
-                  "description": "Menampilkan Menu Rpg",
+                  "description": "Menampilkan Menu Game Epic Rpg!",
                   "rowId": `${_p}? rpg`
                 }, {
                   "title": "|💾|⟩»➵͜͡✪ STALKER MENU",
@@ -412,11 +412,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? stalk`
                 }, {
                   "title": "|🖇️|⟩»➵͜͡✪ SHORT LINK MENU",
-                  "description": "Menampilkan Menu Short Link",
+                  "description": "Ubah link panjang mnejadi singkat",
                   "rowId": `${_p}? shortlink`
                 }, {
                   "title": "|📍|⟩»➵͜͡✪ TOOLS MENU",
-                  "description": "Menampilkan Menu Tools",
+                  "description": "Mungkin tools ini bisa membantu?",
                   "rowId": `${_p}? tools`
                 }, {
                   "title": "|📝|⟩»➵͜͡✪ TEXT MAKER MENU",
