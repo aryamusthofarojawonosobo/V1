@@ -3,8 +3,6 @@
 * CREATOR BY KRIZYN OFFICIAL
 * CREATOR2 BY Zifabotz_offc1
 * DIRECODE AZRYCB
-* MAU BANYAK LAGI FITUR NYA 
-* RECODE SENDIRI BANH JANGAN MAU ENAK AJA
 * NOTE MASIH ADA BUG STIKER DAN LAIN 
 **/
 
@@ -47,19 +45,7 @@ const defaultMenu = {
   footer: '┃\n╰────────❑\n', 
   footerText: 'Powered by ᯤ ʀɪᴇʟɢᴀɴs ᴏғᴄ',
   after: `
-╭──〔  THANKS TO  〕─⬣
-⫹⫺ Allah SWT
-⫹⫺ Orang Tua
-⫹⫺ Kesabaran
-⫹⫺ Penyemangat
-⫹⫺ Nurutomo
-⫹⫺ Ilmanhdyt
-⫹⫺ Elyas
-⫹⫺ Hyzer
-⫹⫺ KrizynOfc
-⫹⫺ RielgansOfc
-⫹⫺ Zifabotz_offc1
-╰─────────────⬣
+Jangan spam fitur
 `,
 }
 
@@ -302,16 +288,16 @@ const fdoc = {
 //━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
 if (teks == '404') {
 let menuu = `╭────ꕥ ${namebot} ꕥ────
-│✾ Nama: ${name}
 │💱 limit tersisa ${limit}
 │🏰 Level ${level} [Xp: ${exp}]
 │🔱 Pangkat ${role}
-│📁 Database ${rtotalreg} dari ${totalreg}
+│📚Terdaftar: ${registered ? 'Ya': 'Tidak'}
 ╰❑
 ╭─❑ 「 INFORMASI 」 ❑──
 │⏰ Aktif selama ${uptime}
-│✾ Tanggal : ${date}
-│✾ Jam : ${wib}
+│📁 Database ${rtotalreg} dari ${totalreg}
+│📆 Tanggal : ${date}
+│🕒 Jam : ${wib}
 ╰❑
  `
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
@@ -330,16 +316,16 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Semua Fitur Yang Ada",
                   "rowId": '.? all'
                   }, {
-                  "title": "|🗃️|⟩»➵͜͡✪ ABSEN MENU",
-                  "description": "Menampilkan Menu Absen",
+                  "title": "|🗃️|⟩»➵͜͡✪ ABSEN & VOTING MENU",
+                  "description": "Menampilan fitur absen dan voting",
                   "rowId": `${_p}? absen`
                 }, {
                   "title": "|⛩️|⟩»➵͜͡✪ ANIME MENU",
                   "description": "Menampilkan Menu khusus para wibu",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "|🎫|⟩»➵͜͡✪ STICKER  MENU",
-                  "description": "Menampilkan Menu Sticker",
+                  "title": "|🎫|⟩»➵͜͡✪ STICKER & CONVERT MENU",
+                  "description": "Membuat stiker & convert ",
                   "rowId": `${_p}? sticker`
                 }, {
                   "title": "|📩|⟩»➵͜͡✪ DOWNLOAD MENU",
@@ -347,11 +333,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? downloader`
                 }, {
                   "title": "|📊|⟩»➵͜͡✪ EXP & LIMIT MENU",
-                  "description": "Menampilkan Menu Exp",
+                  "description": "Cek XP Dan Level serta lihat progresmu",
                   "rowId": `${_p}? xp`
                 }, {
                   "title": "|🌬️|⟩»➵͜͡✪ FUN MENU",
-                  "description": "Menampilkan Menu Fun",
+                  "description": "Menu untuk bersenang-senang",
                   "rowId": `${_p}? fun`
                 }, {
                   "title": "|🎮|⟩»➵͜͡✪ GAME MENU",
@@ -443,15 +429,15 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 }, {
                 "rows": [{
                   "title": ` 😼⟩» OWNER BOT`,
-                  "description": "Nomor Pemilik Bot! save? Save ae🗿",
+                  "description": "hubungi pemilik untuk lapor bug?",
                   "rowId": `.owner`
                 },{
                   "title": `💳⟩» SEWA BOT`,
-                  "description": "Sewa kak, awokawok",
+                  "description": "Add bot ini ke grup kamu",
                   "rowId": `.sewazifa`
                 },{
                   "title": "🌈⟩» INFO BOT",
-                  "description": "Menampilkan Menu Info",
+                  "description": "Status dan Informasi bot",
                   "rowId": `${_p}? info`
                 }],
                 "title": "INFORMASI BOT"
