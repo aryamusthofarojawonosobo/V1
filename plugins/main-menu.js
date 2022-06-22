@@ -190,6 +190,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length
     let premium = global.db.data.users[m.sender].premium
     let user = global.db.data.users[who]
+    let registered = global.db.data.users[registered]
     let { exp, limit, level, money, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let tag = `wa.me/${m.sender.split('@')[0]}`
