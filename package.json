@@ -1,6 +1,6 @@
 {
-    "name": "Krizyn-md",
-    "version": "3.5.4",
+    "name": "AzBoTz-md",
+    "version": "0.0.1",
     "description": "Simple Bot WhatsApp",
     "depecrated": false,
     "main": "index.js",
@@ -17,29 +17,26 @@
     "keywords": [
         "termux-whatsapp-bot",
         "whatsapp-bot",
-        "whatsapp",
-        "js-whatsapp",
-        "whatsapp",
         "ShiraoriBOT",
         "wabot-aq"
     ],
-    "homepage": "https://github.com/frostkri/krizynMd",
+    "homepage": "https://github.com/AzRyCb",
     "author": {
-        "name": "kri"
+        "name": "Az"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/github.com/frostkri/krizynMd.git"
+        "url": "git+https://github.com/AzRyCb/AzBoTz-Preview.git"
     },
     "bugs": {
-        "url": "https://github.com/github.com/frostkri/krizynMd/issues"
+        "url": "https://github.com/AzRyCb/AzBoTz-Preview/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
         "@adiwajshing/baileys": "^4.0.0",
         "awesome-phonenumber": "^2.64.0",
         "axios": "^0.24.0",
-        "@bochilteam/scraper": "^0.0.5",
+        "@bochilteam/scraper": "^2.0.0",
         "cfonts": "^2.10.0",
         "chalk": "^4.1.2",
         "cheerio": "^1.0.0-rc.10",
