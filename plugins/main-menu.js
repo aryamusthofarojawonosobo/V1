@@ -299,12 +299,12 @@ let menuu = `╭────ꕥ ${namebot} ꕥ────
 │📆 Tanggal : ${date}
 │🕒 Jam : ${wib}
 ╰❑
- `
+`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: `*${ucapan()} ${name}*`,
             description: menuu,
-            buttonText: 'KLIK DISINI',
+            buttonText: 'LIST MENU',
             listType: 1,
            FooterText:'',
             mtype: 'listMessage',
@@ -514,14 +514,14 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             hydratedFooterText: wm2, 
             hydratedButtons: [{
             urlButton: {
-               displayText: '🔮ISTAGRAM🔮',
+               displayText: 'FOllOW ON INSTAGRAM',
                url: webm
              }
 
            },
              {
              urlButton: {
-               displayText: '🎮GROUP BOT🎮', 
+               displayText: 'JOIN GROUP BOT', 
                url: gc
              }
 
@@ -542,7 +542,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
            {
              quickReplyButton: {
-               displayText: ' 💌YANG SUDAH MEMBANTU BOT💌',
+               displayText: ' 💌CONTRIBUTOR💌',
                id: '.tqto',
              }
            }]
@@ -562,7 +562,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
 }
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = /^(alive|panel|krizyn|zifa|menu|help|\?)$/i
+handler.command = /^(alive|panel|command|menu|menulist|listmenu|help|\?)$/i
 handler.register = true
 handler.owner = false
 handler.mods = false
