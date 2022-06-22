@@ -2,6 +2,7 @@
 * SCRIPT BOT ORI by hyzer official
 * CREATOR BY KRIZYN OFFICIAL
 * CREATOR2 BY Zifabotz_offc1
+* DIRECODE AZRYCB
 * MAU BANYAK LAGI FITUR NYA 
 * RECODE SENDIRI BANH JANGAN MAU ENAK AJA
 * NOTE MASIH ADA BUG STIKER DAN LAIN 
@@ -302,17 +303,17 @@ const fdoc = {
 if (teks == '404') {
 let menuu = `╭────ꕥ ${namebot} ꕥ────
 │✾ Nama: ${name}
-│✾ Limit: ${limit}
-│✾ Level: ${level}
+│💱 limit tersisa ${limit}
+│🏰 Level ${level} [Xp: ${exp}]
+│🔱 Pangkat ${role}
+│📁 Database ${rtotalreg} dari ${totalreg}
+╰❑
+╭─❑ 「 INFORMASI 」 ❑──
+├lapor jika ada bug/error
 │✾ Tanggal : ${date}
 │✾ Jam : ${wib}
 ╰❑
-╭─❑ 「 INFORMASI 」 ❑──
-│ Bot ini masih tahap beta
-│ apabila ada bug/eror harap
-│ lapor ke owner
-╰❑
-Runtime ${uptime}
+⏰ Aktif selama ${uptime}
  `
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
@@ -442,7 +443,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 "title": "LIST MENU"
                 }, {
                 "rows": [{
-"title": ` 😼⟩» OWNER BOT`,
+                  "title": ` 😼⟩» OWNER BOT`,
                   "description": "Nomor Pemilik Bot! save? Save ae🗿",
                   "rowId": `.owner`
                 },{
