@@ -1,6 +1,4 @@
 /**
-* jangan ganti ya kakak kakak sekalian
-* ini cuma buat ninggalin credit gw doang :)
 * jangan dihilangin, boleh di tambahin 🐦
 **/
 
@@ -19,6 +17,8 @@ BIG THANKS TO
     📮 https://github.com/krizynofc
 ⤿ Zifabotz_offc1
     📮 https://github.com/Botynyakamu
+⤿ AzRyCb
+    📮 https://github.com/AzRyCb
     
 THANKS PARA DONASI YANG TERHORMAT
 `
