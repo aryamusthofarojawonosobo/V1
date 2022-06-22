@@ -313,7 +313,6 @@ let menuu = `╭────ꕥ ${namebot} ꕥ────
 │✾ Tanggal : ${date}
 │✾ Jam : ${wib}
 ╰❑
-
  `
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
