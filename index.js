@@ -17,7 +17,7 @@ CFonts.say('AzBoTz\nMulti Device', {
 CFonts.say(`'${package.name}' By @${package.author.name || package.author}\nver 1.0.0\nRecode By Az`, {
   font: 'console',
   align: 'center',
-  gradient: ['red', 'magenta']                                                           align: 'center',
+  gradient: ['red', 'magenta']
 })
 
 var isRunning = false
