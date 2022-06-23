@@ -19,20 +19,22 @@ let handler = async function (m, { text, usedPrefix }) {
   user.serial = sn
   
   m.reply(`
-╭─❒ 〔 DAFTAR BERHASIL 〕
+━━ 「 *Successful Registration* 」━━
 ❍ Terimakasih anda sudah terdaftar
-❍ Di database kami
-❍ Jika anda menemukan bug atau error
-❍ Maaf bot ini masih dalam  tahap pengembangan
+❍ Simpan SN dengan aman
+❍ kalau mau unreg ketik ${usedPrefix}sn
 ╭─────────────────╮
-├❏ Nama : ${name}
-├❏ Umur : ${age} tahun
-├❏ SN: ${sn}
+├👤 Nama : ${name}
+├🌟 Umur : ${age} tahun
+├🎫 SN: ${sn}
 ╰─────────────────╯
-Gunakan Bot Secukupnya
-Dont Call/Vc Bot 
+_*Note*_ :
+-Simpan/bintangi pesan ini karena
+SN (Serial Number) digunakan
+untuk daftar ulang atau profile
+- kalo lupa sn ketik ${usedPrefix}ceksn
 `.trim())
-u = '╭─❒ 〔 HALLO NEW PREN 〕\n\n❍ Jika mau ke Pengaturan Bot Klik Tombol "Rules Bot"\n❍ Jika menuju menu Klik tombol "Tampilan Menu"\n❍ Jika mau cari owner Klik tombol "Owner"\n\nPatuhi Rules nya,demi kenyamanan kita bersama.'
+u = '╭─❒ 〔 HALLO NEW PREN 〕\n\n❍ Harap baca rules dulu ya \n❍ Click tombol *Menu* untuk melihat semua fitur bot\n❍ Mau sewabot? atau report bug? klick "Owner"\n\nPatuhi Rules nya,demi kenyamanan kita bersama.'
 await conn.send3But(m.chat, u, wm, 'Rules', '#snk', 'Menu', '#menu', 'Owner', '#owner',  m)
 }
 handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
