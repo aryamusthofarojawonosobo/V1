@@ -1,5 +1,5 @@
-import moment from 'moment-timezone'
-import gplay from 'google-play-scraper'
+const moment = require('moment-timezone')
+const gplay = require('google-play-scraper')
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
 	let [url, appId] = text.match(/([a-zA-Z]+(\.[a-zA-Z]+)+)/g) || []
@@ -15,4 +15,4 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 }
 handler.command = /^(apk(info|detail))$/i
 
-export default handler
+module.exports = handler
