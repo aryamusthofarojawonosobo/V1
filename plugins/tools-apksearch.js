@@ -1,4 +1,4 @@
-import gplay from 'google-play-scraper'
+const gplay = require('google-play-scraper')
 
 let handler = async (m, { conn, text }) => {
 	if (!text) throw 'Input Query'
@@ -12,4 +12,4 @@ handler.help = ['apksearch']
 handler.tags = ['tools']
 handler.command = /^(apksearch)$/i
 
-export default handler
+module.exports = handler
