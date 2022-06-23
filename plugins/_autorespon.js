@@ -28,17 +28,7 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
-╠➥ *1 Minggu* :      *Rm 5.00*
-╠➥ *2 Minggu* : *Rm 10.00*
-╠➥ *3 Minggu* :   *Rm 15.00*
-╠➥ *1 Bulan* :        *Rm 20.00*
-║
-╠═〘 𝐏𝐄𝐌𝐁𝐀𝐘𝐀𝐑𝐀𝐍 〙 ═
-╠➥ TOPUP/PIN
-║- 60149431385 (Digi)
-║- 60189830350 (Umobile)
-╠═〘 Hyzer 〙 ═`.trim(), '©shirobotz', 'Digi', '#viadigi', 'Umobile', '#viaumobile', m)
+        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `sewa bg`.trim(), wm, 'sewa', '#sewa', 'Owner', '#owner', m)
 }
 
     // salam
@@ -48,7 +38,7 @@ handler.all = async function (m, { isBlocked }) {
         this.sendSticker(m.chat, fs.readFileSync('./src/salam.webp'), m, {sendEphemeral: true})
     }
 
-    // salam
+    // thanks
     let thanks = /(terima?kasih|makasih|maacih|tengkyuh)/i
     let balesan = thanks.exec(m.text)
     if (balesan && !m.fromMe) {
@@ -75,7 +65,7 @@ handler.all = async function (m, { isBlocked }) {
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |Bot by Hyzer. `).catch(_ => _)
+        await this.setStatus(`Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |Bot by Az. `).catch(_ => _)
         setting.status = new Date() * 1
     }
 
