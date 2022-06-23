@@ -191,7 +191,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let premium = global.db.data.users[m.sender].premium
     let user = global.db.data.users[who]
     let platform = os.platform()
-    let { exp, limit, level, money, role } = global.db.data.users[m.sender]
+    let { exp, limit, level, registered, money, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let tag = `wa.me/${m.sender.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
@@ -296,8 +296,7 @@ let menuu = `╭────ꕥ ${namebot} ꕥ────
 ╭─❑ 「 INFORMASI 」 ❑──
 │⏰ Aktif selama ${uptime}
 │📁 Database ${rtotalreg} dari ${totalreg}
-│📆 Tanggal : ${date}
-│🕒 Jam : ${wib}
+│📑 Status: ${registered ? 'Terdaftar ✅': 'Tidak terdaftar❌'}
 ╰❑
 `
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
