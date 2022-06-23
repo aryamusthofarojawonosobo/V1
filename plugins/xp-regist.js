@@ -21,20 +21,18 @@ let handler = async function (m, { text, usedPrefix }) {
   m.reply(`
 ━━ 「 *Successful Registration* 」━━
 ❍ Terimakasih anda sudah terdaftar
-❍ Simpan atau bintangi pesan ini
-❍ kalau mau unreg ketik ${usedPrefix}sn
+❍ *SN* digunakan untuk daftar ulang
+❍ mau unreg? ketik ${usedPrefix}unreg <sn>
 ╭─────────────────╮
 ├👤 Nama : ${name}
 ├🌟 Umur : ${age} tahun
 ├🎫 SN: ${sn}
 ╰─────────────────╯
 _*Note*_ :
--SN (Serial Number) digunakan
-untuk daftar ulang 
 - kalo lupa sn ketik ${usedPrefix}ceksn
 `.trim())
 u = '━━ 「 *HELLO NEW PREN* 」━━\n\n❍ Harap baca rules dan patuhi ya kak \n❍ Click *Menu* untuk melihat semua fitur\n❍ Mau sewabot? atau report bug? klick "Owner"'
-await conn.send3But(m.chat, u, 'klik salah satu tombol dibawah untuk melanjutkan', 'Rules', '#snk', 'Menu', '#menu', 'Owner', '#owner',  m)
+await conn.send3But(m.chat, u, 'klik salah satu tombol dibawah', 'Rules', '#snk', 'Menu', '#menu', 'Owner', '#owner',  m)
 }
 handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['exp']
