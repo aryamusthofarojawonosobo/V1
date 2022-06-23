@@ -1,7 +1,7 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fs = require('fs')
 let handler = async (m) => {
-let krizyn = `
+let rules = `
 ✧┈─━━ [ RULES ] ━━┈─✧
 
 1️⃣ Pengguna dapat menggunakan semua perintah/command dengan batasan limit terkecuali user premium dengan limit tanpa batas/unlimited, dan tidak melakukan spam terhadap bot.
@@ -32,7 +32,7 @@ let krizyn = `
     const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         templateMessage: {
             hydratedTemplate: {
-                hydratedContentText: krizyn,
+                hydratedContentText: rules,
                 imageMessage: message.imageMessage, 
            hydratedFooterText: '📮 Silahkan pilih Command Dibawah ini',
            hydratedButtons: [{
