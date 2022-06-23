@@ -44,9 +44,7 @@ const defaultMenu = {
   body: '┃⫹⫺ %cmd %islimit %isPremium',
   footer: '┃\n╰────────❑\n', 
   footerText: 'Powered by ᯤ ʀɪᴇʟɢᴀɴs ᴏғᴄ',
-  after: `
-Jangan spam fitur
-`,
+  after: ``,
 }
 
 //━━━━━━━━[ CATEGORY ]━━━━━━━━//
@@ -288,7 +286,8 @@ const fdoc = {
 
 //━━━━━━━━[ BAGIAN MENU ]━━━━━━━━//
 if (teks == '404') {
-let menuu = `╭────ꕥ ${namebot} ꕥ────
+let menuu = `
+╭────ꕥ ${namebot} ꕥ────
 │💱 limit tersisa ${limit}
 │🏰 Level ${level} [Xp: ${exp}]
 │🔱 Pangkat ${role}
@@ -506,7 +505,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            },
                {
              quickReplyButton: {
-        displayText: '🪀SEWABOT🪀',
+        displayText: '🤖SEWABOT🤖',
                id: '.sewazifa',
              }
 
