@@ -9,13 +9,15 @@ const yargs = require('yargs/yargs')
 const rl = Readline.createInterface(process.stdin, process.stdout)
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 
-CFonts.say('Multi Device\n Krizyn', {
-  colors: ['blueBright','yellowBright'],                                        font: 'block',
+CFonts.say('AzBoTz\nMulti Device', {
+  font: 'chrome',
   align: 'center',
+  gradient: ['red', 'magenta']
 })
-CFonts.say(`SUBSCRIBE CHANNEL HOKEN BEUSZ`, {                                            
-colors: ['yellow'],                                                           
-font: 'console',                                                              align: 'center',
+CFonts.say(`'${package.name}' By @${package.author.name || package.author}\nver 1.0.0\nRecode By Az`, {
+  font: 'console',
+  align: 'center',
+  gradient: ['red', 'magenta']                                                           align: 'center',
 })
 
 var isRunning = false
@@ -52,7 +54,7 @@ function start(file) {
   })
   p.on('exit', code => {
     isRunning = false
-    console.error('Exited with code:', code)
+    console.error('[❗] Exited with code:', code)
     if (code === 0) return
     fs.watchFile(args[0], () => {
       fs.unwatchFile(args[0])
