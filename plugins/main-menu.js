@@ -295,7 +295,7 @@ let menuu = `
 ╭─❑ 「 INFORMASI 」 ❑──
 │⏰ Aktif selama ${uptime}
 │📁 Database ${rtotalreg} dari ${totalreg}
-│📑 Status: ${registered ? 'Terdaftar ✅': 'Tidak terdaftar❌'}
+│📑 Status Users: ${registered ? 'Terdaftar ✅': 'Tidak Terdaftar ❌'}
 ╰❑
 `
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
@@ -307,9 +307,23 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            FooterText:'',
             mtype: 'listMessage',
             sections: [
-              {
-      
+	     {
                 "rows": [{
+                  "title": "❗»⟩ Rules",
+                  "description": "User yang bijak selalu mematuhi Rules.",
+                  "rowId": ".rules"
+              }, {
+                  "title": "😼»⟩ OWNER",
+                  "description": "hubungi pemilik untuk lapor bug dan error",
+                  "rowId": `.owner`
+              }, {
+                  "title": "💌»⟩ Group Bot",
+                  "description": "Join Grup AzBoTz bang",
+                  "rowId": ".gcbot"
+              }],
+              "title": "⟣─────────❲ Utama ❳──────────⟢"
+          }, {   
+              "rows": [{
                   "title": `|💬|⟩»➵͜͡✪ ALL MENU`,"description": "Menampilkan Semua Fitur Yang Ada",
                   "rowId": '.? all'
                }, {
@@ -336,7 +350,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                 }, {
                   "title": "|📩|⟩»➵͜͡✪ DOWNLOAD MENU","description": "Download sesuatu menggunakan BOT",
                   "rowId": `${_p}? downloader`
-                }, {
+                }, {    
+                  "title": "🌈⟩» INFO BOT","description": "Lihat Status dan Informasi bot",
+                  "rowId": `${_p}? info`	
+		}, {	
                   "title": "|💬|⟩»➵͜͡✪ GITHUB MENU","description": "Menampilkan Menu Github",
                   "rowId": `${_p}? github`
                 }, {
@@ -395,22 +412,22 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "rowId": `${_p}? textpro`
                 }
                   ],
-                "title": "LIST MENU"
-                }, {
-                "rows": [{
-                  "title": ` 😼⟩» OWNER BOT`,
-                  "description": "hubungi pemilik untuk lapor bug?",
-                  "rowId": `.owner`
+                "title": "⟣─────────❲ LIST MENU BOT ❳──────────⟢"
+           }, {
+              "rows": [{
+                  "title": "🛠️⟩» Status Bot",
+                  "description": "Status dan informasi Bot.",
+                  "rowId": ".botstatus"
                 },{
-                  "title": `💳⟩» SEWA BOT`,
-                  "description": "Add bot ini ke grup kamu",
+                  "title": "💳⟩» SEWA BOT - PREMIUM",
+                  "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium",
                   "rowId": `.sewazifa`
-                },{
-                  "title": "🌈⟩» INFO BOT",
-                  "description": "Status dan Informasi bot",
-                  "rowId": `${_p}? info`
+	        },{
+		  "title": "|💰|Donasi",
+                  "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
+                  "rowId": ".donasi"	
                 }],
-                "title": "INFORMASI BOT"
+                "title": "⟣─────────❲ INFORMASI ❳──────────⟢"
               }
             ], "contextInfo": {
               "stanzaId": m.key.id,
