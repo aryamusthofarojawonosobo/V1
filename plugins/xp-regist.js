@@ -9,8 +9,8 @@ let handler = async function (m, { text, usedPrefix }) {
   if (!name) throw 'Nama tidak boleh kosong (Alphanumeric)'
   if (!age) throw 'Umur tidak boleh kosong (Angka)'
   age = parseInt(age)
-  if (age > 90) throw 'Umur terlalu tua'
-  if (age < 3) throw 'Bayi bisa ngetik sesuai format bjir ._.'
+  if (age > 90) throw 'Umur jangan terlalu tua'
+  if (age < 3) throw 'Masih bayi ko bisa ngetik jir ._.'
   user.name = name
   user.age = parseInt(age)
   user.regTime = + new Date
@@ -21,7 +21,7 @@ let handler = async function (m, { text, usedPrefix }) {
   m.reply(`
 ━━ 「 *Successful Registration* 」━━
 ❍ Terimakasih anda sudah terdaftar
-❍ Simpan SN dengan aman
+❍ Simpan atau bintangi pesan ini
 ❍ kalau mau unreg ketik ${usedPrefix}sn
 ╭─────────────────╮
 ├👤 Nama : ${name}
@@ -29,13 +29,12 @@ let handler = async function (m, { text, usedPrefix }) {
 ├🎫 SN: ${sn}
 ╰─────────────────╯
 _*Note*_ :
--Simpan/bintangi pesan ini karena
-SN (Serial Number) digunakan
-untuk daftar ulang atau profile
+-SN (Serial Number) digunakan
+untuk daftar ulang 
 - kalo lupa sn ketik ${usedPrefix}ceksn
 `.trim())
-u = '╭─❒ 〔 HALLO NEW PREN 〕\n\n❍ Harap baca rules dulu ya \n❍ Click tombol *Menu* untuk melihat semua fitur bot\n❍ Mau sewabot? atau report bug? klick "Owner"\n\nPatuhi Rules nya,demi kenyamanan kita bersama.'
-await conn.send3But(m.chat, u, wm, 'Rules', '#snk', 'Menu', '#menu', 'Owner', '#owner',  m)
+u = '━━ 「 *HELLO NEW PREN* 」━━\n\n❍ Harap baca rules dan patuhi ya kak \n❍ Click *Menu* untuk melihat semua fitur\n❍ Mau sewabot? atau report bug? klick "Owner"'
+await conn.send3But(m.chat, u, 'klik salah satu tombol dibawah untuk melanjutkan', 'Rules', '#snk', 'Menu', '#menu', 'Owner', '#owner',  m)
 }
 handler.help = ['daftar', 'reg', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['exp']
