@@ -13,7 +13,7 @@ ${json.url}
 }
 handler.help = ['kompas', 'tribun', 'jalantikus']
 handler.tags = ['internet']
-handler.command = /^kompas|liputan6|tribun|jalantikus$/i
+handler.command = /^kompas|tribun|jalantikus$/i
 
 
 module.exports = handler
