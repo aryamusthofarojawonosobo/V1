@@ -1,53 +1,53 @@
-// INI SC MASIH ADA BUG YA FIX IN AJA
-// DASAR ILMANHDYT
-// SC ORI HYZER
-// PENCIPTA KRIZYN OFC
-// RECODE OLEH ZIFABOTZ dan azbotz
-// DIGUNAKAN OLEH BANG TUHAN ARYA
+// INI SC MASIH ADA BUG YA FIX IN AJA 
+// BASE ILMANHDYT 
+// SC ORI HYZER 
+// CREATOR KRIZYN OFC 
+// RECODE BY ZIFABOTZ and azbotz 
+// DIGUNAKAN OLEH BANG LORD ARYA 
 
-//==============『 Utama ================== //
-global . pemilik  =  [ '6289688069444' , '6285795035419' , '6283183321692' , '62895411075941' , '6285828764046' ] 
-global . mod  =  [ '62895411075941' , '62831833321692' , '6285795035419' , '6289688069444' , '6285828764046' ] 
-global . premis  =  [ '6285795035419' , '6289688069444' , '62895411075941' , '6283183321692' , '6285828764046' ] 
+//=============『 Utama 』================== // 
+global.owner = ['6289688069444','6285795035419','6283183321692','62895411075941','6285828764046'] 
+global.mods = ['62895411075941','6283183321692','6285795035419','6289688069444','6285828764046'] 
+global.prems = ['6285795035419','6289688069444','62895411075941','6283183321692','6285828764046'] 
 
-//==============『 Info Pemilik ============== //
-global . nameowner  =  'BangLordArCatalouge' , 'lordpartner' , 'developer_bot_lord' , 'HanyaSekedarTeman' , 'owner22BangAZ' , 'PembuatSCnya'
-global . pemilik nomor  =  'https://wa.me/p/5705241632840380/6289688069444' , '6289688069444' , '62895411075941' , '62831833321692' , '6285795035419' , '6285828764046' 
-global . instagram  =  'https://instagram.com/arya_musthofa_roja01' 
-global . github  =  'https://github.com/devbotmail' 
-global . dana  =  '089688069444' 
-global . pulsa  =  '089688069444' 
-global . gopay  =  '089688069444' 
+//=============『 Info Owner 』============== // 
+global.nameowner = 'BangLordArCatalouge','lordpartner','developer_bot_lord','HanyaSekedarTeman','owner22BangAZ','PembuatSCnya'
+global.numberowner = 'https://wa.me/p/5705241632840380/6289688069444','6289688069444','62895411075941','6283183321692','6285795035419','6285828764046' 
+global.instagram = 'https://instagram.com/arya_musthofa_roja01' 
+global.github = 'https://github.com/devbotmail' 
+global.dana = '089688069444' 
+global.pulsa = '089688069444' 
+global.gopay = '089688069444' 
 
-//==============『 Info Bot ==================//
-global . namebot  =  '@❋ཻུ۪۪⸙# *BotMd-Lord_Arya* -%%⳹❋ཻུ۪۪' 
-global . gc  =  'https://chat.whatsapp.com/E7R8oYD1AiKFVTk83Qc0sd' 
-global . web  =  'https://google-expres-web.blogspot.com'  //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi.
-global . webm  =  'https://instagram.com/arya_musthofa_roja01' 
-global . price1  =  '𝐍𝐈𝐇 𝐁𝐀𝐍𝐆 \n\n》PERMANEN Rp 21.000\nMAKSIMAL 1 GRUP\n》PERMANEN Rp 17.000\nMAKSIMAL 3 GRUP \n》1 BULAN Rp 13.000\nMAKSIMAL 1 GRUP \n》3 MINGGU GRATIS ATAU Rp 2.000\ nMAKSIMAL 1 GRUP' 
+//=============『 Info Bot 』=================// 
+global.namebot = '@❋ཻུ۪۪⸙# *BotMd-Lord_Arya* -%%⳹❋ཻུ۪۪' 
+global.gc = 'https://chat.whatsapp.com/E7R8oYD1AiKFVTk83Qc0sd' 
+global.web = 'https://google-expres-web.blogspot.com' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.webm = 'https://instagram.com/arya_musthofa_roja01' 
+global.price1 = '𝐍𝐈𝐇 𝐁𝐀𝐍𝐆 𝐋𝐈𝐒𝐓 𝐒𝐄𝐖𝐀𝐍𝐘𝐀\n\n》PERMANEN Rp 21.000\nMAKSIMAL 1 GRUP\n》PERMANEN Rp 17.000\nMAKSIMAL 3 GRUP \n》1 BULAN Rp 13.000\nMAKSIMAL 1 GRUP \n》3 MINGGU FREE ATAU Rp 2.000\nMAKSIMAL 1 GRUP' 
 
-//========『 Tampilan Dan Lainnya ============//
-global . fotonya1  =  'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg'  //ganti jadi foto bot mu
-global . fotonya2  =  'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg'  //ini juga ganti
-global . fotonya3  =  'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg' 
-global . donasi  =  'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg'  //ganti pakai poto apa aja
-global . lolkey  =  'Papah-Chan'  //biar mudah ngegantinya semisal apikeynya expired:v
-global . zenzkey  =  'BagasPrdn'  //ganti jadi apikey lu kalau expired
-global . wm  =  '© -//Lord:Md.Bot⳹ ' 
-global . tanda air  =  wm 
-global . wm2  =  'ᯤ Pencipta oleh Oᵂηʀ᭄๖ۣۣۜLordAr꧅' 
-global . wm3  =  'ᯤ BangLord ' 
-global . htki  =  '–––––––『' 
-global . htka  =  '』––––––' 
-global . media  =  'https://telegra.ph/file/72168c6f1aaa90315c369.jpg' 
-global . fla  =  'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=' 
-global . wait  =  '⏳Tunggu... sedang memuat/loading...' 
-global . eror  =  '_*🚨 Server Error Mohon Coba Lagi Nanti*_' 
-global . benar  =  'Benar \n' 
-global . salah  =  'Salah \n' 
-global . stiker_wait  =  '⏳ Memuat Stiker' 
-global . nama paket = ' BangLordBot  '  
-global . penulis  =  '@BangLord' 
+//=======『 Tampilan Dan Lainnya 』============// 
+global.fotonya1 = 'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg' //ganti jadi foto bot mu 
+global.fotonya2 = 'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg' //ini juga ganti 
+global.fotonya3 = 'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg' 
+global.donasi = 'https://telegra.ph/file/6b4b8ae2ba7f244626a6d.jpg' //ganti pakai poto apa aja 
+global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v 
+global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired 
+global.wm = '© ❋ཻུ۪۪-//Lord:Md.Bot⳹ ❋ཻུ۪۪' 
+global.watermark = wm 
+global.wm2 = 'ᯤ Creator by Oᵂηʀ᭄๖ۣۣۜLordAr꧅' 
+global.wm3 = 'ᯤ BangLord 𝙾𝙵𝙲' 
+global.htki = '––––––『' 
+global.htka = '』––––––' 
+global.media = 'https://telegra.ph/file/72168c6f1aaa90315c369.jpg' 
+global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=' 
+global.wait = '⏳Tunggu... sedang memuat/loading...' 
+global.eror = '_*🚨 Server Error Mohon Coba Lagi Nanti*_' 
+global.benar = 'Benar ✅\n' 
+global.salah = 'Salah ❌\n' 
+global.stiker_wait = '⏳ Memuat Stiker' 
+global.packname = 'BangLordBot' 
+global.author = '@BangLord' 
 
 //=============『 Apikey 』================== //
 global.APIs = { // API Prefix
